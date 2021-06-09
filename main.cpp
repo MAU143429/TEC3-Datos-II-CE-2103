@@ -1,6 +1,16 @@
-#include <iostream>
+#include "src/CorrectionAlgorithms/CRC.h"
+#include<bits/stdc++.h>
+
+using namespace std;
+
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    //Example using CRC algorithm
+    string data = "100100";
+    string key = "1101";
+
+    CRC::encodeData(data, key);
+
     return 0;
 }
